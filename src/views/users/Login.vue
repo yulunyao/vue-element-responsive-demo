@@ -104,7 +104,7 @@ export default {
     },
     gotoRegist () {
       this.$router.push({
-        path: '/demo'
+        path: '/register'
       })
     }
   }
