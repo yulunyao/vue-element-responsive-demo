@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import store from './store/index'
 import Full from '@/containers/Full'
 // 把下面的路由 作懒加载处理
+const RespDemo = () => import(/*webpackChunkName: "demo"*/ '@/views/demos/responsive_demo.vue')
 const Login = () => import(/* webpackChunkName: "users" */ '@/views/users/Login.vue')
 const Register = () => import(/* webpackChunkName: "users" */ '@/views/users/Register.vue')
 const Dashboard = () => import(/* webpackChunkName: "dashboard" */ '@/views/dashboard/Dashboard.vue')
@@ -20,6 +21,11 @@ const router = new Router({
   // mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+    {
+      path: '/demo',
+      name: 'Demo',
+      component: RespDemo
+    },
     {
       path: '/login',
       name: 'Login',
