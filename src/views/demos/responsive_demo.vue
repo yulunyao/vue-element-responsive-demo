@@ -1,48 +1,26 @@
 <template>
-  <div class="box">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+  <div>
+    <el-row :gutter="10">
+      <el-col :xs="8" :sm="6" :md="4" :lg="1"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :xs="4" :sm="6" :md="8" :lg="9"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :xs="4" :sm="6" :md="8" :lg="9"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :xs="8" :sm="6" :md="4" :lg="3"><div class="grid-content bg-purple-light"></div></el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
-export default {
-  
-}
+export default {};
 </script>
 
 <style lang="stylus" scoped>
-  * 
-    padding 0
-    margin 0
-
-  .box
-    width 100%
-    height 200px
-    background-color #ccc
+  .bg-purple
+    background-color #cccccc
   
-  .box > div
-    width 100%
-    height 100%
-    background-color skyblue
-    box-sizing border-box
-    border-right 2px solid blue
-    border-bottom 2px solid blue
-    float left
+  .bg-purple-light
+    background-color red
 
-  @media screen and (min-width 768px)
-    .box > div
-      width 50%
-
-  @media screen and (min-width 992px)
-    .box > div
-      width 33.33%
-  
-  @media screen and (min-width 1200px)
-    .box > div
-      width 25%
+  .grid-content 
+    border-radius 4px
+    min-height 46px
 </style>
