@@ -1,0 +1,16 @@
+@color: #234458;
+
+.addRadius(@r:1px){
+    border-radius: @r;
+    -moz-border-radius: @r;
+    -webkit-border-radius: @r;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    .addRadius();
+    div {
+        height: 100px
+    }
+}

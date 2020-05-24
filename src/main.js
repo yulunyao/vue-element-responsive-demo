@@ -6,6 +6,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import './assets/styles/reset.css'
 import './assets/styles/common.css'
 import './plugins/element.js'
+import 'element-ui/lib/theme-chalk/display.css';
 import './plugins/vcharts.js'
 import 'swiper/dist/css/swiper.css'
 import '@/assets/icons/iconfont.css'
